@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
-import {View, Text, StatusBar, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import {useSafeArea} from 'react-native-safe-area-context';
-const BANNERHEIGHT = 350;
+const HEADER_HEIGHT = 350;
 const HEIGHT = 44;
 
 const TopNavigation = (props) => {
@@ -11,16 +11,13 @@ const TopNavigation = (props) => {
   const isFloating = !!scrollA;
   const [isTransparent, setTransparent] = useState(isFloating);
 
-  console.log('[safe area]', safeArea);
-
   useEffect(() => {
     if (!scrollA) {
       return;
     }
 
     const listenerId = scrollA.addListener((a) => {
-      console.log('scrollA', a);
-      const topNaviOffset = BANNERHEIGHT - HEIGHT - safeArea.top;
+      const topNaviOffset = HEADER_HEIGHT - HEIGHT - safeArea.top;
       isTransparent !== a.value < topNaviOffset &&
         setTransparent(!isTransparent);
     });
@@ -30,12 +27,6 @@ const TopNavigation = (props) => {
 
   return (
     <>
-      {/* <StatusBar
-        barStyle="dark-content"
-        backgroundColor="transparent"
-        translucent
-        // hidden={true}
-      /> */}
       <View style={styles.container(safeArea, isFloating, isTransparent)}>
         <Text style={styles.title(isTransparent)}>{title}</Text>
       </View>
