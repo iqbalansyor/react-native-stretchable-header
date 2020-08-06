@@ -3,7 +3,9 @@ import {StatusBar, Image, View} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 import SafeAreaView from 'react-native-safe-area-view';
 
-import StretchableHeader, {animatedValueScrollY} from './StretchableHeader';
+import StretchableHeader, {
+  animatedValueScrollY,
+} from 'react-native-stretchable-header';
 import {
   TitleText,
   Subtitle1,

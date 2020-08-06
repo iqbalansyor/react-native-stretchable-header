@@ -13,12 +13,15 @@
     "react": "16.13.1",
     "react-native": "0.63.2",
     "react-native-safe-area-context": "^3.1.1",
-    "react-native-safe-area-view": "^1.1.1"
+    "react-native-safe-area-view": "^1.1.1",
+    "react-native-stretchable-header": "git@github.com:iqbalansyor/react-native-stretchable-header.git"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/runtime": "^7.8.4",
     "@react-native-community/eslint-config": "^1.1.0",
+    "@types/react": "^16.9.44",
+    "@types/react-native": "^0.63.4",
     "babel-jest": "^25.1.0",
     "eslint": "^6.5.1",
     "jest": "^25.1.0",
