@@ -33,13 +33,12 @@ const renderContentView = () => {
 const HomeScreen = () => {
   return (
     <>
-      <TopNavigation title="Home" scrollA={animatedValueScrollY} />
+      <TopNavigation title="Home" scrollAnimatedValue={animatedValueScrollY} />
       <StretchableHeader
         headerImageHeight={350}
         headerImageSource={require('./image.jpg')}
         contentView={renderContentView()}
       />
-      <View style={{backgroundColor: 'red', height: 300, width: 200}}></View>
     </>
   );
 };

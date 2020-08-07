@@ -7,22 +7,22 @@ const HEIGHT = 44;
 const TopNavigation = (props) => {
   const safeArea = useSafeArea();
   console.log(props);
-  const {title, scrollA} = props;
-  const isFloating = !!scrollA;
+  const {title, scrollAnimatedValue} = props;
+  const isFloating = !!scrollAnimatedValue;
   const [isTransparent, setTransparent] = useState(isFloating);
 
   useEffect(() => {
-    if (!scrollA) {
+    if (!scrollAnimatedValue) {
       return;
     }
 
-    const listenerId = scrollA.addListener((a) => {
+    const listenerId = scrollAnimatedValue.addListener((a) => {
       const topNaviOffset = HEADER_HEIGHT - HEIGHT - safeArea.top;
       isTransparent !== a.value < topNaviOffset &&
         setTransparent(!isTransparent);
     });
 
-    return () => scrollA.removeListener(listenerId);
+    return () => scrollAnimatedValue.removeListener(listenerId);
   });
 
   return (
