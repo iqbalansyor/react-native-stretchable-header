@@ -6,6 +6,7 @@ import SafeAreaView from 'react-native-safe-area-view';
 import StretchableHeader, {
   animatedValueScrollY,
 } from 'react-native-stretchable-header';
+
 import {
   TitleText,
   Subtitle1,
@@ -38,6 +39,7 @@ const HomeScreen = () => {
         headerImageSource={require('./image.jpg')}
         contentView={renderContentView()}
       />
+      <View style={{backgroundColor: 'red', height: 300, width: 200}}></View>
     </>
   );
 };
