@@ -5,7 +5,7 @@
 A React Native scrollable stretchable header component. **Works on iOS & Android.**
 
 ## Preview
-[![stretchable-header.gif](https://s7.gifyu.com/images/stretchable-header.gif)](https://gifyu.com/image/c2v0)
+[![rn-stretchable-header-2.gif](https://s7.gifyu.com/images/rn-stretchable-header-2.gif)](https://gifyu.com/image/c2dr)
 
 ## Installation
 `npm install react-native-stretchable-header --save`
@@ -30,7 +30,7 @@ import StretchableHeader from 'react-native-stretchable-header';
 | prop | type/valid values | default | description |
 | - | - | - | - |
 | headerImageHeight | number | 100 | Height of header image |
-| headerImageSource | ImageSourcePropType | null | Stretchable header image ([RN image source][https://facebook.github.io/react-native/docs/images.html]) |
+| headerImageSource | ImageSourcePropType | null | Stretchable header image [RN image source](https://facebook.github.io/react-native/docs/images.html) |
 | contentView | ReactElement | 100 | Height of header image |
 
 
@@ -46,9 +46,9 @@ import StretchableHeader, {animatedValueScrollY} from 'react-native-stretchable-
 
 For instance, if you want to create navigation bar like preview below:
 
-[![stretchable-header-2.gif](https://s7.gifyu.com/images/stretchable-header-2.gif)](https://s7.gifyu.com/images/stretchable-header-2.gif)
+[![rn-stretchable-header.gif](https://s7.gifyu.com/images/rn-stretchable-header.gif)](https://gifyu.com/image/c2dn)
 
-You can use  **TopNavigation** from [Example](https://github.com/iqbalansyor/react-native-stretchable-header/tree/master/Example/src)
+You can copy and use  **TopNavigation** from [Example](https://github.com/iqbalansyor/react-native-stretchable-header/tree/master/Example/src)
 
 ## Demo Application
 This repository contains a demo React Native application with a customizable example of the `StretchableHeader` component in use.
