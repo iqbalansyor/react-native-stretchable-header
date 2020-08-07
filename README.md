@@ -48,7 +48,7 @@ For instance, if you want to create navigation bar like preview below:
 
 [![rn-stretchable-header.gif](https://s7.gifyu.com/images/rn-stretchable-header.gif)](https://gifyu.com/image/c2dn)
 
-You can copy and use  **TopNavigation** from [Example](https://github.com/iqbalansyor/react-native-stretchable-header/tree/master/Example/src). Customize base on your needs.
+You can copy and use  **TopNavigation** from [Example](https://github.com/iqbalansyor/react-native-stretchable-header/tree/master/Example/src). Customize it based on your needs.
 
 ## Demo Application
 This repository contains a demo React Native application with a customizable example of the `StretchableHeader` component in use.
