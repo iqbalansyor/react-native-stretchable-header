@@ -25,6 +25,16 @@
   },
   "author": "Iqbal Ansyori <ansyori.iqbal@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "react native",
+    "stretchable header",
+    "stretchable",
+    "scrollable",
+    "ios",
+    "android",
+    "animation",
+    "scrolling"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/iqbalansyor/react-native-stretchable-header"
