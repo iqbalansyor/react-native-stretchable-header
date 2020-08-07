@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Animated, ImageSourcePropType} from 'react-native';
+import { View, StyleSheet, Animated, ImageSourcePropType } from 'react-native';
 
 export const animatedValueScrollY = new Animated.Value(0);
 
@@ -10,18 +10,22 @@ interface StretchableHeaderProps {
 }
 
 const StretchableHeader = (props: StretchableHeaderProps) => {
-  const scrollA = animatedValueScrollY;
+  const animatedScrollValue = animatedValueScrollY;
+  const headerImageHeight = props.headerImageHeight
+    ? 100
+    : props.headerImageHeight;
   return (
     <View>
       <Animated.ScrollView
         onScroll={Animated.event(
-          [{nativeEvent: {contentOffset: {y: scrollA}}}],
-          {useNativeDriver: true},
+          [{ nativeEvent: { contentOffset: { y: animatedScrollValue } } }],
+          { useNativeDriver: true }
         )}
-        scrollEventThrottle={16}>
+        scrollEventThrottle={16}
+      >
         <View style={styles.headerContainer}>
           <Animated.Image
-            style={getHeaderStyle(scrollA, props.headerImageHeight)}
+            style={getHeaderStyle(animatedScrollValue, headerImageHeight)}
             source={props.headerImageSource}
           />
           {props.contentView}
@@ -33,7 +37,7 @@ const StretchableHeader = (props: StretchableHeaderProps) => {
 
 const getHeaderStyle = (
   scrollAnimatedValue: Animated.Value,
-  headerImageHeight: number,
+  headerImageHeight: number
 ) => {
   return {
     height: headerImageHeight,
