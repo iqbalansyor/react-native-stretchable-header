@@ -5,7 +5,7 @@
 A React Native scrollable stretchable header component. **Works on iOS & Android.**
 
 ## Preview
-[![stretchable-header-2.gif](https://s7.gifyu.com/images/stretchable-header-2.gif)](https://gifyu.com/image/c2vi)
+[![stretchable-header-2.md.gif](https://s7.gifyu.com/images/stretchable-header-2.md.gif)](https://gifyu.com/image/c2vi)
 
 ## Installation
 `npm install react-native-stretchable-header --save`
@@ -45,7 +45,7 @@ import StretchableHeader, {animatedValueScrollY} from 'react-native-stretchable-
 ### With Navigation Bar
 
 For instance, if you want to create navigation bar like preview below:
-[![stretchable-header.gif](https://s7.gifyu.com/images/stretchable-header.gif)](https://gifyu.com/image/c2v0)
+[![stretchable-header.md.gif](https://s7.gifyu.com/images/stretchable-header.md.gif)](https://gifyu.com/image/c2v0)
 
 You can use  **TopNavigation** from [Example](https://github.com/iqbalansyor/react-native-stretchable-header/tree/master/Example/src)
 
