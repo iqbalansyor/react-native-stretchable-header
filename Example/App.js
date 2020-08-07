@@ -14,6 +14,7 @@ const App = () => {
           barStyle="dark-content"
           backgroundColor="white"
           translucent
+          hidden={true}
         />
         <HomeScreen />
         {/* </SafeAreaView> */}

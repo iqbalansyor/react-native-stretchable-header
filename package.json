@@ -1,7 +1,7 @@
 {
   "name": "react-native-stretchable-header",
   "version": "0.0.1",
-  "description": "",
+  "description": "A React Native scrollable stretchable header component",
   "main": "src/StretchableHeader.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,6 +23,11 @@
     "metro-react-native-babel-preset": "^0.58.0",
     "react-test-renderer": "16.11.0"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Iqbal Ansyori <ansyori.iqbal@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iqbalansyor/react-native-stretchable-header"
+  },
+  "homepage": "https://github.com/iqbalansyor/react-native-stretchable-header"
 }
